@@ -1,5 +1,8 @@
 {
   "name": "socially",
+  "description": "Learning Meteor",
+  "license": "ISC",
+  "author": "Zura Guerra",
   "private": true,
   "scripts": {
     "start": "meteor run"
