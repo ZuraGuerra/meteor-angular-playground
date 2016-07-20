@@ -6,13 +6,10 @@ angular.module('aviary', [
 ])
   .controller('PeriquisController', function($scope) {
     'ngInject';
-    
-    $scope.periquis =
-    [
-      {
-        'name': 'Milorad',
-        'color': 'green',
-        'favoriteFruit': 'apple'
+
+    $scope.helpers({
+      periquis() {
+        return Periquis.find({});
       }
-    ]
+    });
   });
