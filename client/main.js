@@ -4,4 +4,4 @@ import periquisCtr from './controllers/periquis.js';
 
 angular
   .module('aviary', aviaryDeps)
-  .controller('PeriquisController', perisquisCtr);
+  .controller('PeriquisController', periquisCtr);
