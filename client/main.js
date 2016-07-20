@@ -1,15 +1,9 @@
 import angular from 'angular';
 import angularMeteor from 'angular-meteor';
 
-angular.module('aviary', [
-  angularMeteor
-])
-  .controller('PeriquisController', function($scope) {
-    'ngInject';
+import { name as PeriquisList } from '../imports/ui/components/periquisList/periquisList'
 
-    $scope.helpers({
-      periquis() {
-        return Periquis.find({});
-      }
-    });
-  });
+angular.module('aviary', [
+  angularMeteor,
+  PeriquisList
+]);
