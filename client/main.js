@@ -1,18 +1,15 @@
 import angular from 'angular';
-import angularMeteor from 'angular-meteor';
+import aviaryDeps from './dependencies/aviary.js';
 
-angular.module('aviary', [
-  angularMeteor
-])
-  .controller('PeriquisController', function($scope) {
+angular.module('aviary', aviaryDeps)
+  .controller('PeriquisController', function ($scope) {
     'ngInject';
     
-    $scope.periquis =
-    [
+    $scope.periquis = [
       {
         'name': 'Milorad',
         'color': 'green',
         'favoriteFruit': 'apple'
       }
-    ]
+    ];
   });
