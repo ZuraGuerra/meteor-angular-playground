@@ -1,6 +1,6 @@
 import angular from 'angular';
 import aviaryDeps from './dependencies/aviary.js';
-import perisquisCtr from './controllers/perisquis.js';
+import periquisCtr from './controllers/periquis.js';
 
 angular
   .module('aviary', aviaryDeps)
