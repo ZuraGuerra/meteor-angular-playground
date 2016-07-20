@@ -1,11 +1,13 @@
-<ul>
-  <li>
-    <span>Periqui</span>
-    <p>
-      Color: blue
-    </p>
-    <p>
-      Favorite fruit: apple
-    </p>
-  </li>
-</ul>
+<div ng-controller="PeriquisController">
+  <ul>
+    <li ng-repeat="periqui in periquis">
+      <span>{{ periqui.name }}</span>
+      <p>
+        {{ periqui.color }}
+      </p>
+      <p>
+        {{ periqui.favoriteFruit }}
+      </p>
+    </li>
+  </ul>
+</div>
