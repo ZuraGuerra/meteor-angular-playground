@@ -11,7 +11,7 @@ class PeriquisList {
 
     this.helpers({
       periquis() {
-        return Periquis.find();
+        return Periquis.find({});
       }
     });
   }
